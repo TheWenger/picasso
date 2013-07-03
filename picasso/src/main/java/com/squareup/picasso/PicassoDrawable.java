@@ -36,7 +36,7 @@ final class PicassoDrawable extends Drawable {
   // Only accessed from main thread.
   private static final Paint DEBUG_PAINT = new Paint();
 
-  private static final float FADE_DURATION = 200f; //ms
+  private static final float FADE_DURATION = 200; //ms
 
   /**
    * Create or update the drawable on the target {@link ImageView} to display the supplied bitmap
@@ -96,7 +96,8 @@ final class PicassoDrawable extends Drawable {
   /**
    * Construct a drawable with the given placeholder (drawable or resource id). The actual bitmap
    * will be set later via
-   * {@link #setBitmap(android.graphics.Bitmap, com.squareup.picasso.Request.LoadedFrom, boolean)}).
+   * {@link #setBitmap(android.graphics.Bitmap, com.squareup.picasso.Request.LoadedFrom,
+   * boolean)}).
    * <p/>
    * This drawable may be re-used with view recycling by a call to
    * {@link #setBitmap(android.graphics.Bitmap, com.squareup.picasso.Request.LoadedFrom, boolean)}

@@ -17,7 +17,6 @@ package com.squareup.picasso;
 
 import android.content.Context;
 import android.net.Uri;
-import com.squareup.okhttp.HttpResponseCache;
 import com.squareup.okhttp.OkHttpClient;
 import java.io.File;
 import java.io.IOException;
@@ -69,10 +68,10 @@ public class OkHttpDownloader implements Downloader {
    */
   public OkHttpDownloader(final File cacheDir, final int maxSize) {
     this(new OkHttpClient());
-    try {
-      client.setResponseCache(new HttpResponseCache(cacheDir, maxSize));
-    } catch (IOException ignored) {
-    }
+    //try {
+    //  client.setResponseCache(new HttpResponseCache(cacheDir, maxSize));
+    //} catch (IOException ignored) {
+    //}
   }
 
   /**
